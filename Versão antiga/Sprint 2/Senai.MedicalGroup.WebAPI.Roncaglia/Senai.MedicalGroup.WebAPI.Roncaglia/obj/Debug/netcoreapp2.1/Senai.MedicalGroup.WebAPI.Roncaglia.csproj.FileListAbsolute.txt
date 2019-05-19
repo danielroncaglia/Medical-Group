@@ -1,0 +1,14 @@
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\bin\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.deps.json
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\bin\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.runtimeconfig.json
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\bin\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.runtimeconfig.dev.json
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\bin\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.dll
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.csprojAssemblyReference.cache
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.csproj.CoreCompileInputs.cache
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.RazorAssemblyInfo.cache
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.RazorAssemblyInfo.cs
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.AssemblyInfoInputs.cache
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.AssemblyInfo.cs
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.RazorTargetAssemblyInfo.cache
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\bin\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.pdb
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.dll
+C:\Users\28725446827\Desktop\Daniel\MedicalGroup\Sprint 2\Senai.MedicalGroup.WebAPI.Roncaglia\Senai.MedicalGroup.WebAPI.Roncaglia\obj\Debug\netcoreapp2.1\Senai.MedicalGroup.WebAPI.Roncaglia.pdb

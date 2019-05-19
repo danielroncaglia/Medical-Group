@@ -1,0 +1,8 @@
+ID_Paciente;ID_Medico;Data_Horario;Descricao_Consulta;Situacao_Consulta
+7;3;20/01/2019 15:00;;Realizada
+2;2;06/01/2018 10:00;;Cancelada
+3;2;07/02/2019 11:00;;Realizada
+2;2;06/02/2018 10:00;;Realizada
+4;1;07/02/2019 11:00;;Cancelada
+7;3;08/02/2019 15:00;;Agendada
+4;1;09/02/2019 11:00;;Agendada

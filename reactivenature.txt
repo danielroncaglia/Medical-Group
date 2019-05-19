@@ -1,0 +1,9 @@
+react-native init RNMedGroup
+
+npm install --save react-navigation
+
+npm install --save react-native-gesture-handler
+
+react-native link react-native-gesture-handler
+
+react-native run-android
