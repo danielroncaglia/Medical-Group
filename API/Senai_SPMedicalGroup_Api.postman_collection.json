@@ -1,0 +1,324 @@
+{
+	"id": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+	"name": "Senai_SPMedicalGroup_Api",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Consultas",
+			"description": "",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"order": [
+				"90721194-04e1-a475-dedb-43d0eab16fe4",
+				"3df5d079-d7df-5c54-c27b-7884942a57e6",
+				"c72065a8-1ce3-d37e-8467-d802f413d961",
+				"676fbfc5-47fb-e661-ff5f-0fcb48ea17b9",
+				"b628ad9d-a847-ea7a-e0d0-715e8d637f42"
+			],
+			"owner": "4679175",
+			"folders_order": [],
+			"id": "644b5881-d04f-959d-73d7-874bbcf3ed0c"
+		},
+		{
+			"name": "Login",
+			"description": "",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"order": [
+				"6db69872-7f6b-c7d4-f9c3-a5bb9f76dd65"
+			],
+			"owner": "4679175",
+			"folders_order": [],
+			"id": "5f00d3bc-0ea3-212c-de48-96e9f8e8a079"
+		},
+		{
+			"name": "Médicos",
+			"description": "",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"order": [
+				"29b58b5a-00f6-7bd5-17bf-92beaada29a7"
+			],
+			"owner": "4679175",
+			"folders_order": [],
+			"id": "f77609be-e9b2-d839-85f0-7551a7a3f6a2"
+		},
+		{
+			"name": "Pacientes",
+			"description": "",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"order": [
+				"b2b99e87-a9e6-53da-7ec0-ddce083eed91"
+			],
+			"owner": "4679175",
+			"folders_order": [],
+			"id": "53d74e00-41a4-6ed5-3bee-5287811e289a"
+		}
+	],
+	"folders_order": [
+		"f77609be-e9b2-d839-85f0-7551a7a3f6a2",
+		"5f00d3bc-0ea3-212c-de48-96e9f8e8a079",
+		"644b5881-d04f-959d-73d7-874bbcf3ed0c",
+		"53d74e00-41a4-6ed5-3bee-5287811e289a"
+	],
+	"timestamp": 1553194701616,
+	"owner": "4679175",
+	"public": false,
+	"requests": [
+		{
+			"id": "29b58b5a-00f6-7bd5-17bf-92beaada29a7",
+			"headers": "Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/pacientes",
+			"folder": "f77609be-e9b2-d839-85f0-7551a7a3f6a2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553196033111,
+			"name": "Lista Médicos",
+			"description": "",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"responses": []
+		},
+		{
+			"id": "3df5d079-d7df-5c54-c27b-7884942a57e6",
+			"headers": "Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/consultas/listar",
+			"folder": "644b5881-d04f-959d-73d7-874bbcf3ed0c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553196024384,
+			"name": "Listar Consulta",
+			"description": "",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"responses": []
+		},
+		{
+			"id": "676fbfc5-47fb-e661-ff5f-0fcb48ea17b9",
+			"headers": "Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZUBnbWFpbC5jb20iLCJqdGkiOiI2IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGUiLCJleHAiOjE1NTMxOTkzNzIsImlzcyI6IlNlbmFpLk1lZGljYWxHcm91cC5XZWJBUEkuUm9uY2FnbGlhIiwiYXVkIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEifQ.bwY3m9OxvUGHZe5CGA8i-doAkoIkGbvvwD2D4U3xyR4\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZUBnbWFpbC5jb20iLCJqdGkiOiI2IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGUiLCJleHAiOjE1NTMxOTkzNzIsImlzcyI6IlNlbmFpLk1lZGljYWxHcm91cC5XZWJBUEkuUm9uY2FnbGlhIiwiYXVkIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEifQ.bwY3m9OxvUGHZe5CGA8i-doAkoIkGbvvwD2D4U3xyR4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/consultas/paciente",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar Paciente Logado",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1553197644071,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "644b5881-d04f-959d-73d7-874bbcf3ed0c"
+		},
+		{
+			"id": "6db69872-7f6b-c7d4-f9c3-a5bb9f76dd65",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/login",
+			"folder": "5f00d3bc-0ea3-212c-de48-96e9f8e8a079",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "adm@medgroup.com",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553195895714,
+			"name": "Login",
+			"description": "",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"responses": [],
+			"rawModeData": "{\"email\": \"adm@medgroup.com\", \"senha\": \"12345\"}"
+		},
+		{
+			"id": "90721194-04e1-a475-dedb-43d0eab16fe4",
+			"headers": "Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/consultas/cadastrar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Cadastrar Consulta",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1553197161449,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "644b5881-d04f-959d-73d7-874bbcf3ed0c",
+			"rawModeData": "    {\n        \"idPaciente\": \"6\",\n        \"idMedico\": \"3\",\n        \"dataHorario\": \"2019-01-20T15:00:00\",\n        \"situacaoConsulta\": \"Realizada\"\n    }"
+		},
+		{
+			"id": "b2b99e87-a9e6-53da-7ec0-ddce083eed91",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzE5NzY3NiwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.jCOhmjAQUwnnoPvJQbkUbsLwgtQv4hqfnA8TiVMilVY",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/pacientes",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar Pacientes",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1553195972583,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "53d74e00-41a4-6ed5-3bee-5287811e289a"
+		},
+		{
+			"id": "b628ad9d-a847-ea7a-e0d0-715e8d637f42",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzIwMDIxOCwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.w5aN_S7h2c6eZVpiJ3T5bXWFdLeMQCrBFVx6JZJszOA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBtZWRncm91cC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTU1MzIwMDIxOCwiaXNzIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEiLCJhdWQiOiJTZW5haS5NZWRpY2FsR3JvdXAuV2ViQVBJLlJvbmNhZ2xpYSJ9.w5aN_S7h2c6eZVpiJ3T5bXWFdLeMQCrBFVx6JZJszOA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/consultas/atualizar ",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Atualizar Consulta",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1553198857538,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "644b5881-d04f-959d-73d7-874bbcf3ed0c",
+			"rawModeData": "    {\n        \"idPaciente\": 7,\n        \"idMedico\": 3,\n        \"dataHorario\": \"2019-02-08T15:00:00\",\n        \"situacaoConsulta\": \"Cancelada                                         \",\n        \"idConsultas\": 6\n    },"
+		},
+		{
+			"id": "c72065a8-1ce3-d37e-8467-d802f413d961",
+			"headers": "Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpY2FyZG8ubGVtb3NAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik3DqWRpY28iLCJleHAiOjE1NTMxOTkwNzQsImlzcyI6IlNlbmFpLk1lZGljYWxHcm91cC5XZWJBUEkuUm9uY2FnbGlhIiwiYXVkIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEifQ.fPSXBQfp9tZe5e8xF5wsIVbalwr-zkSwFgWfz6DB5UY\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpY2FyZG8ubGVtb3NAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik3DqWRpY28iLCJleHAiOjE1NTMxOTkwNzQsImlzcyI6IlNlbmFpLk1lZGljYWxHcm91cC5XZWJBUEkuUm9uY2FnbGlhIiwiYXVkIjoiU2VuYWkuTWVkaWNhbEdyb3VwLldlYkFQSS5Sb25jYWdsaWEifQ.fPSXBQfp9tZe5e8xF5wsIVbalwr-zkSwFgWfz6DB5UY",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/consultas/medico",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1cde9b3b-8730-b3c1-8351-64ef92cb3e85",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar Médico Logado",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1553197429998,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "644b5881-d04f-959d-73d7-874bbcf3ed0c"
+		}
+	]
+}
