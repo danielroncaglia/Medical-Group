@@ -29,7 +29,8 @@ class SignIn extends Component {
     });
 
     const token = resposta.data.token;
-    console.warn(token);
+    await AsyncStorage.setItem("userToke", token);
+    this.props.navigation.navigate("MainNavigator");
   };
 
     render(){
@@ -39,11 +40,13 @@ class SignIn extends Component {
             <TextInput
             style={styles.inputLogin}
             placeholder="E-mail"
+            onChangeText={email => this.setState({email})}
             />
     
             <TextInput
             style={styles.inputLogin}
             placeholder="Senha"
+            onChangeText={senha => this.setState({senha})}
             />
         
 

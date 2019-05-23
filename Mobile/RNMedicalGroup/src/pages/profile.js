@@ -1,16 +1,38 @@
-import React, {Component} from "react";
-import {Text, Image, View, StyleSheet} from "react-native";
+import React, { Component } from "react";
+
+import { Text, Image, StyleSheet, View, AsyncStorage } from "react-native";
+
+import jwt from "jwt-decode";
 
 class Profile extends Component {
+  static navigationOptions = {
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require("../assets/profile.png")}
+        style={styles.tabNavigatorIconProfile}
+      />
+    )
+  };
 
-    static navigationOptions = {
-        tabBarIcon: ({tintColor}) => (
-            <Image
-                source={require("../assets/profile.png")}
-                style={styles.tabNavigatorIconHome}
-            />
-        )
-    };
+  constructor(props) {
+    super(props);
+    this.state = { token: "", nome: "" };
+  }
+
+  _buscarDadosDoStorage = async () => {
+    try {
+      const value = await AsyncStorage.getItem("userToken");
+      if (value !== null) {
+        this.setState({ nome: jwt(value).Nome });
+        this.setState({ token: value });
+      }
+    } catch (error) {}
+  };
+
+  componentDidMount() {
+    this._buscarDadosDoStorage();
+  }
+
 
     render(){
         return(
@@ -22,11 +44,18 @@ class Profile extends Component {
                     style={styles.mainHeaderImg}
                 />
                 <Text style={styles.mainHeaderText}>{"Perfil do parceiro"}</Text>
-            </View>
-            </View>
-            </View>
-            );
-    }
+                </View>
+          <View style={styles.mainHeaderLine} />
+        </View>
+        <View style={styles.mainBody}>
+          <View style={styles.mainBodyProfile}>
+            <Text>{this.state.token}</Text>
+            <Text>{this.state.nome}</Text>
+          </View>
+        </View>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -72,6 +101,15 @@ const styles = StyleSheet.create({
     mainBody:{
         flex:4
     },
+
+    mainBodyProfile: {
+        paddingTop: 30,
+        paddingRight: 50,
+        paddingLeft: 50,
+        justifyContent: "center",
+        alignItems: "center"
+      }
+
 });
 
 export default Profile;
