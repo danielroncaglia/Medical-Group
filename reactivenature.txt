@@ -7,3 +7,5 @@ npm install --save react-native-gesture-handler
 react-native link react-native-gesture-handler
 
 react-native run-android
+
+https://trello.com/b/Ibtj5RBp/senai-s%C3%A3o-paulo-medical-group-sprint-5

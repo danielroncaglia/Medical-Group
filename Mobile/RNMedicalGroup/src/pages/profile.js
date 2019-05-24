@@ -1,116 +1,93 @@
-import React, { Component } from "react";
+  import React, { Component } from "react";
 
-import { Text, Image, StyleSheet, View, AsyncStorage } from "react-native";
+  import { Text, Image, StyleSheet, View, AsyncStorage } from "react-native";
+  
+  import jwt from "jwt-decode";
+  
+  class Profile extends Component {
+    static navigationOptions = {
+      tabBarIcon: ({ tintColor }) => (
+        <Image
+          source={require("../assets/profile.png")}
+          style={styles.iconeNavegacaoPerfil}
+        />
+      )
+    };
+  
+    constructor(props) {
+      super(props);
+      this.state = { token: "", nome: "" };
+    }
+  
+    _buscarDadosDoStorage = async () => {
+      try {
+        const value = await AsyncStorage.getItem("userToken");
+        if (value !== null) {
+          this.setState({ nome: jwt(value).Nome });
+          this.setState({ token: value });
+        }
+      } catch (error) {}
+    };
+  
+    componentDidMount() {
+      this._buscarDadosDoStorage();
+    }
+  
+  
+      render(){
+          return(
+          <View style={styles.telaPerfil}>
+                  <Image
+                      source={require('../assets/profile.png')}
+                      style={styles.imagemPerfil}
+                  />
+                  <Text style={styles.textoPerfil}>{"Perfil do parceiro"}</Text>
 
-import jwt from "jwt-decode";
-
-class Profile extends Component {
-  static navigationOptions = {
-    tabBarIcon: ({ tintColor }) => (
-      <Image
-        source={require("../assets/profile.png")}
-        style={styles.tabNavigatorIconProfile}
-      />
-    )
-  };
-
-  constructor(props) {
-    super(props);
-    this.state = { token: "", nome: "" };
+            <View>
+              <Text style={styles.textoPerfildetalhes}>{this.state.token}</Text>
+              <Text style={styles.textoPerfildetalhes}>{this.state.nome}</Text>
+            </View>
+            </View>
+      );
+    }
   }
-
-  _buscarDadosDoStorage = async () => {
-    try {
-      const value = await AsyncStorage.getItem("userToken");
-      if (value !== null) {
-        this.setState({ nome: jwt(value).Nome });
-        this.setState({ token: value });
-      }
-    } catch (error) {}
-  };
-
-  componentDidMount() {
-    this._buscarDadosDoStorage();
-  }
-
-
-    render(){
-        return(
-        <View style={styles.main}>
-        <View style={styles.mainHeader}>
-            <View style={styles.mainHeaderRow}>
-                <Image
-                    source={require('../assets/profile.png')}
-                    style={styles.mainHeaderImg}
-                />
-                <Text style={styles.mainHeaderText}>{"Perfil do parceiro"}</Text>
-                </View>
-          <View style={styles.mainHeaderLine} />
-        </View>
-        <View style={styles.mainBody}>
-          <View style={styles.mainBodyProfile}>
-            <Text>{this.state.token}</Text>
-            <Text>{this.state.nome}</Text>
-          </View>
-        </View>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-    tabNavigatorIconHome:{
-        width: 25,
-        height: 25,
-        tintColor: "white"
-    },
-
-    main:{
-        flex: 1,
-        backgroundColor: "white",
-        alignItems: "center",
-        justifyContent: "center"
-    },
-
-    mainHeaderRow:{
+  
+  const styles = StyleSheet.create({
+    iconeNavegacaoPerfil:{
+          width: 25,
+          height: 25,
+          tintColor: "white"
+      },
+  
+      telaPerfil: {
+        display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        alignContent: "space-around",
+        padding: 40
     },
 
-    mainHeaderImg: {
-        width:99,
-        height: 106,
-        marginTop: 20,
-        justifyContent: "center",
-    },
-
-    mainHeaderText:{
-        fontSize: 35,
-        letterSpacing: 20,
+    textoPerfil: {
+        fontSize: 40,
+        fontFamily: "OpenSans",
         color: "#2699FB",
-        fontFamily: "Calibri"
+        letterSpacing: 4
     },
 
-    mainHeaderLine:{
-        width: 170,
-        paddingTop: 10,
-        borderBottomColor: "#999999",
-        borderBottomWidth: 0.9
+    imagemPerfil: {
+        height: 140,
+        width: 132,
+        margin: 40,
+        tintColor: "#2699FB"
     },
 
-    mainBody:{
-        flex:4
+    textoPerfildetalhes: {
+        fontSize: 18,
+        fontFamily: "OpenSans",
+        color: "#2699FB",
+        letterSpacing: 4
     },
-
-    mainBodyProfile: {
-        paddingTop: 30,
-        paddingRight: 50,
-        paddingLeft: 50,
-        justifyContent: "center",
-        alignItems: "center"
-      }
-
-});
-
-export default Profile;
-
+  
+  });
+  
+  export default Profile;

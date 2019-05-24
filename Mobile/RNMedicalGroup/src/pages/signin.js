@@ -1,15 +1,17 @@
-import React, {Component} from "react";
-import {   StyleSheet,
-    View,
-    Text,
-    Image,
-    ImageBackground,
-    TextInput,
-    TouchableOpacity,
-    AsyncStorage} from "react-native";
+import React, { Component } from "react";
+import {
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  ImageBackground,
+  TextInput,
+  TouchableOpacity,
+  AsyncStorage
+} from "react-native";
 
 
-    import api from "../services/api";
+import api from "../services/api";
 
 class SignIn extends Component {
   static navigationOptions = {
@@ -23,9 +25,9 @@ class SignIn extends Component {
 
   _realizarLogin = async () => {
 
-        const resposta = await api.post("/login", {
-        email: this.state.email,
-        senha: this.state.senha
+    const resposta = await api.post("/login", {
+      email: this.state.email,
+      senha: this.state.senha
     });
 
     const token = resposta.data.token;
@@ -33,79 +35,95 @@ class SignIn extends Component {
     this.props.navigation.navigate("MainNavigator");
   };
 
-    render(){
-        return (
+  render() {
+    return (
 
-            <View style={styles.main}>
-            <TextInput
-            style={styles.inputLogin}
-            placeholder="E-mail"
-            onChangeText={email => this.setState({email})}
-            />
-    
-            <TextInput
-            style={styles.inputLogin}
-            placeholder="Senha"
-            onChangeText={senha => this.setState({senha})}
-            />
-        
+      <View style={styles.telaLogin}>
 
-        <TouchableOpacity style={styles.btnLogin}
-        onPress={this._realizarLogin}>
-            <Text style={styles.btnLoginTexto}>Entrar</Text>
+        <Image
+          source={require('../assets/icon-login.png')}
+          style={styles.imagemLogin}
+        />
+        <Text style={styles.textoLogin}>{"Medical Group"}</Text>
+
+        <TextInput
+          style={styles.inputLogin}
+          placeholder="parceiro@med.com"
+          onChangeText={email => this.setState({ email })}
+        />
+
+        <TextInput
+          style={styles.inputLogin}
+          placeholder="******"
+          secureTextEntry={true}
+          onChangeText={senha => this.setState({ senha })}
+          
+        />
+
+        <TouchableOpacity style={styles.botaoLogin}
+          onPress={this._realizarLogin}>
+          <Text style={styles.botaoLoginTexto}>Entrar</Text>
         </TouchableOpacity>
 
-            </View>
+      </View>
     );
-    }
+  }
 }
 
 const styles = StyleSheet.create({
-    overlay: {
-      ...StyleSheet.absoluteFillObject,
-      backgroundColor: "rgba(183, 39, 255, 0.79)"
-    },
-    main: {
-      width: "100%",
-      height: "100%",
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center"
-    },
-    mainImgLogin: {
-      tintColor: "#FFFFFF",
-      height: 100,
-      width: 90,
-      margin: 10
-    },
-    btnLogin: {
-      height: 38,
-      shadowColor: "rgba(0,0,0, 0.4)", // IOS
-      shadowOffset: { height: 1, width: 1 }, // IOS
-      shadowOpacity: 1, // IOS
-      shadowRadius: 1, //IOS
-      elevation: 3, // Android
-      width: 240,
-      borderRadius: 4,
-      borderWidth: 1,
-      borderColor: "#FFFFFF",
-      backgroundColor: "#FFFFFF",
-      justifyContent: "center",
-      alignItems: "center",
-      marginTop: 10
-    },
-    btnLoginText: {
-      fontSize: 10,
-      fontFamily: "OpenSans-Light",
-      color: "#B727FF",
-      letterSpacing: 4
-    },
-    inputLogin: {
-      width: 240,
-      marginBottom: 10,
-      fontSize: 25,
-      color: "black"
-    }
-  });
+
+  telaLogin: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    alignContent: "space-around",
+    margin: 20,
+    padding: 40
+  },
+
+  textoLogin: {
+    fontSize: 40,
+    fontFamily: "OpenSans",
+    color: "#2699FB",
+    letterSpacing: 4
+  },
+
+  imagemLogin: {
+    height: 140,
+    width: 132,
+    margin: 40
+  },
+
+  botaoLogin: {
+    height: 50,
+    elevation: 3,
+    width: 300,
+    borderWidth: 1,
+    borderColor: "#2699FB",
+    backgroundColor: "#2699FB",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+    margin: 20
+  },
+
+  botaoLoginTexto: {
+    fontSize: 25,
+    fontFamily: "OpenSans",
+    color: "white",
+  },
+
+  inputLogin: {
+    borderWidth: 2,
+    borderColor: "#2699FB",
+    width: 300,
+    height: 50,
+    fontSize: 25,
+    fontFamily: "OpenSans",
+    color: "#2699FB",
+    borderRadius: 10,
+    margin: 20,
+  }
+});
 
 export default SignIn;
