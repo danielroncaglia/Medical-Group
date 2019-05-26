@@ -55,10 +55,22 @@ class Main extends Component {
 
     renderizaItem = ({ item }) => (
         <View >
-            <Text style={styles.textoListaConsultas}>{item.idPaciente}</Text>
+            
+            <Text style={styles.textoListaConsultas}>Paciente:</Text>
+            <Text style={styles.textoListaConsultas}>{item.idPaciente.nomePaciente}</Text>
+            
+            <Text style={styles.textoListaConsultas}>Data da Consulta:</Text>           
             <Text style={styles.textoListaConsultas}>{item.dataHorario}</Text>
+
+            <Text style={styles.textoListaConsultas}>Descrição:</Text>           
             <Text style={styles.textoListaConsultas}>{item.descricaoConsulta}</Text>
+
+            <Text style={styles.textoListaConsultas}>Situação:</Text>           
             <Text style={styles.textoListaConsultas}>{item.situacaoConsulta}</Text>
+
+            <Text style={styles.flatItemNomeLista}>Nome do Medico:</Text>
+            <Text style={styles.flatItemNome}>{item.idMedico.nome}</Text>
+
         </View>
     );
 }
