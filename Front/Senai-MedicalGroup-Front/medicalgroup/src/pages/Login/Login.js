@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import {parseJwt} from '../../services/auth';
-//import logo from '../../assets/img/icon-login.png'
+import logo from '../../assets/img/icon-login.png'
 import Axios from "axios";
-//import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import '../../assets/css/login.css';
 
 export default class Login extends Component {
     constructor(){
@@ -27,7 +28,7 @@ export default class Login extends Component {
         
         alert(this.state.email + " logado");
 
-        Axios.post('https://localhost:5001/api/login', {
+        Axios.post('http://192.168.15.10:5000/api/login', {
           email : this.state.email,
           senha: this.state.senha
        })
@@ -67,13 +68,17 @@ export default class Login extends Component {
           <div className="img__overlay" />
         </div>
 
+        <Link to="/">
+                <img src={logo} className="icone__login" alt="SviGufo" />
+              </Link>
+
         <div className="item__login">
           <div className="row">
             <div className="item">
             </div>
             <div className="item" id="item__title">
               <p className="text__login" id="item__description">
-                Faça o login.
+                Bem-vindo ao Medical Group. Faça o login.
               </p>
             </div>
             <form onSubmit={this.efetuaLogin.bind(this)}>
@@ -91,7 +96,7 @@ export default class Login extends Component {
               <div className="item">
                 <input
                   className="input__login"
-                  placeholder="password"
+                  placeholder="senha"
                   value={this.state.senha}
                   onChange={this.atualizaEstadoSenha.bind(this)}
                   type="password"

@@ -27,7 +27,6 @@ class App extends Component {
         <main className="conteudoPrincipal">
 
           <section id="conteudoPrincipal-eventos">
-s
             <div className="container">
               <nav>
                 <ul className="conteudoPrincipal-dados">

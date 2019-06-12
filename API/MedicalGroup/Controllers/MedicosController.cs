@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using MedicalGroup.Interfaces;
 using MedicalGroup.Repositories;
 
-namespace Senai.MedicalGroup.WebAPI.Roncaglia.Controllers
+namespace MedicalGroup.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

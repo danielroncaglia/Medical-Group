@@ -13,7 +13,6 @@ export default class CadastrarConsulta extends Component {
       DataHorario: "",
       DescricaoConsulta: "",
       SituacaoConsulta: "",
-      Outros: "",
       listaconsultas: [],
 
     };
@@ -21,12 +20,7 @@ export default class CadastrarConsulta extends Component {
   }
 
     componentDidMount() {
-        // apiService
-        //     .call("consultas/cadastrar")
-        //     .getAll()
-        //     .then(data => {
-        //         this.setState({ listaconsultas: data.data });
-        //     });
+
         
     }
 
@@ -50,10 +44,6 @@ export default class CadastrarConsulta extends Component {
     this.setState({ SituacaoConsulta: event.target.value });
   }
 
-  atualizaEstadoOutros(event) {
-    this.setState({ Outros: event.target.value });
-  }
-
   atualizaEstadolistaconsultas(event) {
     this.setState({ listaconsultas: event.target.value });
   }
@@ -65,10 +55,11 @@ export default class CadastrarConsulta extends Component {
       idPaciente: this.state.IdPaciente,
       idMedico: this.state.IdMedico,
       dataHorario: this.state.DataHorario,
+      descricaoConsulta: this.state.DescricaoConsulta,
       situacaoConsulta: this.state.SituacaoConsulta,
     };
 
-    axios.post('http://localhost:5000/api/consultas/cadastrar', consulta,{
+    axios.post('http://192.168.15.10:5000/api/consultas/cadastrar', consulta,{
       headers: {
           "Authorization": "Bearer " + localStorage.getItem('medicalgroup'),
           "Content-Type": "application/json"
@@ -121,6 +112,8 @@ export default class CadastrarConsulta extends Component {
 
                     <textarea
                     rows="3"
+
+
                     cols="50"
                     value={this.state.DescricaoConsulta}
                     onChange={this.atualizaEstadoDescricaoConsulta.bind(this)}
@@ -137,16 +130,6 @@ export default class CadastrarConsulta extends Component {
                     <option value="Realizada">Realizada</option>
                     <option value="Cancelada">Cancelada</option>
                   </select>
-
-                    <textarea
-                    rows="3"
-                    cols="50"
-                    value={this.state.Outros}
-                    onChange={this.atualizaEstadoOutros.bind(this)}
-                    placeholder="outras informações"
-                    id="outros"
-                  />
-
                   
                 </div>
 

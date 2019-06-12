@@ -57,7 +57,7 @@ class Main extends Component {
         <View >
             
             <Text style={styles.textoListaConsultas}>Paciente:</Text>
-            <Text style={styles.textoListaConsultas}>{item.idPaciente.nomePaciente}</Text>
+            <Text style={styles.textoListaConsultas}>{item.idPaciente}</Text>
             
             <Text style={styles.textoListaConsultas}>Data da Consulta:</Text>           
             <Text style={styles.textoListaConsultas}>{item.dataHorario}</Text>
@@ -68,8 +68,8 @@ class Main extends Component {
             <Text style={styles.textoListaConsultas}>Situação:</Text>           
             <Text style={styles.textoListaConsultas}>{item.situacaoConsulta}</Text>
 
-            <Text style={styles.flatItemNomeLista}>Nome do Medico:</Text>
-            <Text style={styles.flatItemNome}>{item.idMedico.nome}</Text>
+            <Text style={styles.textoListaConsultas}>Nome do Medico:</Text>
+            <Text style={styles.textoListaConsultas}>{item.idMedico}</Text>
 
         </View>
     );
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     },
 
     textoListaConsultas: {
-        fontSize: 18,
+        fontSize: 20,
         fontFamily: "OpenSans",
         color: "#2699FB",
         letterSpacing: 4

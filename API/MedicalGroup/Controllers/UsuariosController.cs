@@ -5,7 +5,7 @@ using MedicalGroup.Domains;
 using MedicalGroup.Interfaces;
 using MedicalGroup.Repositories;
 
-namespace Senai.SPMedicalGroup.WebAPI.Controllers
+namespace MedicalGroup.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -1,5 +1,6 @@
 ﻿using MedicalGroup.Domains;
 using MedicalGroup.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace MedicalGroup.Repositories
         {
             using (MedicalGroupContext ctx = new MedicalGroupContext())
             {
-                return ctx.Consultas.Where(x => x.IdPaciente == IdPaciente).ToList();
+                return ctx.Consultas.Where(x => x.IdPaciente == IdPaciente).Include(x => x.IdPacienteNavigation).ToList();
             }
         }
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+//import axios from "axios";
 
 export default class ListarConsulta extends Component {
 
@@ -20,7 +20,7 @@ export default class ListarConsulta extends Component {
     }
 
     listarConsultas() {
-        fetch('http://localhost:5000/api/consulta/listar', {
+        fetch('http://192.168.15.10:5000/api/consulta/listar', {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer " + localStorage.getItem("medgroup")
