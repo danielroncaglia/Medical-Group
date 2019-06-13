@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import "../../assets/css/flexbox.css";
+import "../../assets/css/reset.css";
+import "../../assets/css/style.css";
+
 export default class CadastrarConsulta extends Component {
 
   constructor() {
@@ -59,7 +63,7 @@ export default class CadastrarConsulta extends Component {
       situacaoConsulta: this.state.SituacaoConsulta,
     };
 
-    axios.post('http://192.168.15.10:5000/api/consultas/cadastrar', consulta,{
+    axios.post('http://192.168.6.3:5000/api/consultas/cadastrar', consulta,{
       headers: {
           "Authorization": "Bearer " + localStorage.getItem('medicalgroup'),
           "Content-Type": "application/json"
@@ -67,7 +71,7 @@ export default class CadastrarConsulta extends Component {
 
   })
   .then( res => {
-    this.CadastrarConsulta()
+    alert("Cadastrar consulta")
   })
   }
 
@@ -130,6 +134,7 @@ export default class CadastrarConsulta extends Component {
                     <option value="Realizada">Realizada</option>
                     <option value="Cancelada">Cancelada</option>
                   </select>
+
                   
                 </div>
 

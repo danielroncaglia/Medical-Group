@@ -61,6 +61,7 @@ namespace MedicalGroup.Controllers
         }
 
         [HttpGet("listar")]
+        [Authorize(Roles = "Administrador")]
         public IActionResult listarConsultas()
         {
             try

@@ -1,53 +1,63 @@
 import React, { Component } from "react";
 //import axios from "axios";
 
-export default class ListarConsulta extends Component {
+import apiService from "../../services/apiServices"
+
+import "../../assets/css/flexbox.css";
+import "../../assets/css/reset.css";
+import "../../assets/css/style.css";
+
+class ListarConsulta extends Component {
 
     constructor() {
         super();
         this.state = {
-            listarconsulta: [],
+            listarConsultas: [],
             idPaciente: '',
-            idMedico:  '',
+            idMedico: '',
             dataHorario: '',
-            situacaoConsulta:  '',
+            descricaoConsulta:"",
+            situacaoConsulta: '',
         }
     }
 
 
-    componentDidMount() {
-        this.listarConsulta();
+    listarConsultas() {
+        apiService
+            .call("consultas/listar")
+            .getAll()
+            .then(res => {
+                const consultas = res.data;
+                console.log(consultas);
+                this.setState({ listarConsultas: consultas })
+            })
     }
 
-    listarConsultas() {
-        fetch('http://192.168.15.10:5000/api/consulta/listar', {
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": "Bearer " + localStorage.getItem("medgroup")
-            }
-        })
-            .then(resposta => resposta.json())
-            .then(data => this.setState({ listarconsulta: data }))
-            .catch((erro) => console.log(erro))
+    componentDidMount() {
+        this.listarConsultas();
     }
 
 
     render() {
         return (
             <div className="centralizar1">
-                        <h1>SPMedGroup</h1>
-                        <div className="lista-consultas">    
+                <h1>Medical Group</h1>
+                <div className="lista-consultas">
+                    {this.state.listarConsultas.map((consultas) => {
+                        return (
+                            <tr key={consultas.id}>
+                                <li>{consultas.idPaciente}</li>
+                                <li>{consultas.idMedico}</li>
+                                <li>{consultas.dataHorario}</li>
+                                <li>{consultas.descricaoConsulta}</li>
+                                <li>{consultas.situacaoConsulta}</li>
+                            </tr>
+                        )
+                    })}
+                </div>
+            </div>
+        )
+    }
+}
 
-                                {this.state.listarConsulta.map((consulta) => {
-                                 {  return (
-                                            <h2>
-                                            {consulta.idPaciente}
-                                            {consulta.idMedico}
-                                            {consulta.dataHorario}
-                                            {consulta.situacaoConsulta}
-                                            </h2>
-                                 )}}
-        )}
-                        </div>
-                        </div>
-        )}}
+export default ListarConsulta;
