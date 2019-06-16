@@ -22,16 +22,13 @@
   }
   
   .img__overlay {
-    background:green;
     overflow: hidden;
     height: 100vh;
     z-index: 2;
   }
   
   @media only screen and (max-width: 768px) {
-    .img__login {
-      display: none;
-    }
+
   
     .container {
       width: 100%;
@@ -53,13 +50,13 @@
     align-content: center;
   }
   
-  .row {
-    width: auto;
-  }
-  
+
   .icone__login {
     width: 200px;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   
   .item {
@@ -141,6 +138,7 @@
   .btn__login {
     background-color: #2699FB;
     color: #fff;
+    align-self: center;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
     box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);

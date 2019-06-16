@@ -22,7 +22,7 @@ namespace MedicalGroup.Controllers
             PacientesRepository = new PacienteRepository();
         }
         [HttpGet]
-        [Authorize(Roles = "Administrador")]
+        [Authorize(Roles = "Paciente")]
         public IActionResult get()
         {
             try

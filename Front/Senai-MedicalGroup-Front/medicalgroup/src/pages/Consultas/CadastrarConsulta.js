@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import {Link} from 'react-router-dom';
 import "../../assets/css/flexbox.css";
 import "../../assets/css/reset.css";
 import "../../assets/css/style.css";
+import logo from '../../assets/img/icon-login.png'
+
 
 export default class CadastrarConsulta extends Component {
 
@@ -84,6 +86,11 @@ export default class CadastrarConsulta extends Component {
           <section className="conteudoPrincipal-cadastro">
 
             <h1 className="conteudoPrincipal-cadastro-titulo">Cadastrar Consultas</h1>
+            <h1 className="conteudoPrincipal-cadastro-titulo">Medical Group</h1>
+
+            <Link to="/">
+                <img src={logo} className="icone__login" alt="Medical" />
+        </Link>
 
             <div className="container" id="conteudoPrincipal-cadastro">
 
