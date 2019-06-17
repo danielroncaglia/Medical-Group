@@ -10,11 +10,11 @@ class ListarPaciente extends Component {
         super();
         this.state = {
             listarPaciente: [],
-            idPaciente: '',
-            idMedico: '',
-            dataHorario: '',
+            idPaciente: "",
+            idMedico: "",
+            dataHorario: "",
             descricaoConsulta:"",
-            situacaoConsulta: '',
+            situacaoConsulta: "",
             nomePaciente:"",
             nascimentoPaciente:"",
             rgPaciente:"",

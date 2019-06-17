@@ -92,7 +92,9 @@ namespace MedicalGroup.Controllers
                     });
                 }
 
-                return Ok(ConsultaRepository.consultaporPaciente(pacienteProcurado.IdPaciente));
+                var listaconsultapaciente = ConsultaRepository.consultaporPaciente(pacienteProcurado.IdPaciente);
+
+                return Ok(listaconsultapaciente);
 
             }
             catch (Exception ex)
