@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-//import axios from "axios";
-
-import apiService from "../../services/apiServices"
-
+import "../../assets/css/listar.css";
+import "../../assets/css/flexbox.css";
 import "../../assets/css/reset.css";
-import "../../assets/css/style.css";
+import apiService from "../../services/apiServices"
 
 class ListarPaciente extends Component {
 
@@ -17,9 +15,6 @@ class ListarPaciente extends Component {
             dataHorario: '',
             descricaoConsulta:"",
             situacaoConsulta: '',
-            idPacienteNavigation:"",
-            idPaciente:"",
-            idUsuario:"",
             nomePaciente:"",
             nascimentoPaciente:"",
             rgPaciente:"",
@@ -59,8 +54,6 @@ class ListarPaciente extends Component {
                                 <li>{paciente.dataHorario}</li>
                                 <li>{paciente.descricaoConsulta}</li>
                                 <li>{paciente.situacaoConsulta}</li>
-                                <li>{paciente.idPacienteNavigation}</li>
-                                <li>{paciente.idUsuario}</li>
                                 <li>{paciente.nomePaciente}</li>
                                 <li>{paciente.nascimentoPaciente}</li>
                                 <li>{paciente.rgPaciente}</li>

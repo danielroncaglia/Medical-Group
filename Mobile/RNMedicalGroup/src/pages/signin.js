@@ -7,9 +7,9 @@ import {
   ImageBackground,
   TextInput,
   TouchableOpacity,
-  AsyncStorage
 } from "react-native";
 
+import {AsyncStorage} from 'react-native';
 
 import api from "../services/api";
 
@@ -31,7 +31,7 @@ class SignIn extends Component {
     });
 
     const token = resposta.data.token;
-    await AsyncStorage.setItem("userToke", token);
+    await AsyncStorage.setItem("userToken", token);
     this.props.navigation.navigate("MainNavigator");
   };
 

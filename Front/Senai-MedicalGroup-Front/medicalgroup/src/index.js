@@ -7,7 +7,7 @@ import CadastrarConsulta from './pages/Consultas/CadastrarConsulta';
 import ListarConsulta from './pages/Consultas/ListarConsulta';
 //import ListarMedico from './pages/Consultas/ListarMedico';
 //import AtualizarConsulta from './pages/Consultas/AtualizarConsulta';
-//import ListarPaciente from './pages/Consultas/ListarPaciente';
+import ListarPaciente from './pages/Consultas/ListarPaciente';
 
 import { usuarioAutenticado, parseJwt } from '../src/services/auth';
 import NaoEncontrada from './pages/NaoEncontrada/NaoEncontrada';
@@ -33,14 +33,14 @@ const PermissaoAdm = ({component : Component}) => (
 //    />
 //);
 
-//const PermissaoPaciente = ({component : Component}) => (
-//    <Route 
-//        render = {props => usuarioAutenticado() && parseJwt().Role === "Paciente" ?
- //           (<Component { ...props } />) :
-  //          (<Redirect to={{ pathname : '/login', }} /> )
-   //     }
- //   />
-//);
+const PermissaoPaciente = ({component : Component}) => (
+   <Route 
+       render = {props => usuarioAutenticado() && parseJwt().Role === "Paciente" ?
+          (<Component { ...props } />) :
+           (<Redirect to={{ pathname : '/login', }} /> )
+      }
+  />
+);
 
 const 
 rotas = (
@@ -51,6 +51,7 @@ rotas = (
                 <Route path="/login" component={Login} />
                 <PermissaoAdm path="/cadastrarconsulta" component={CadastrarConsulta} />
                 <PermissaoAdm Route path="/listarconsulta" component={ListarConsulta} />
+                <PermissaoPaciente path="/listarpaciente" component={ListarPaciente} />
                 <Route component={NaoEncontrada} />
             </Switch>
         </div>

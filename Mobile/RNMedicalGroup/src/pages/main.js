@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Text, View, Image, StyleSheet, FlatList } from "react-native";
-
+import axios from "axios";
 import api from "../services/api";
+import {AsyncStorage} from 'react-native';
 
 class Main extends Component {
 
@@ -26,7 +27,14 @@ class Main extends Component {
     }
 
     carregarConsultas = async () => {
-        const resposta = await api.get("/consultas/listar");
+        let token = await AsyncStorage.getItem('userToken');
+
+        const resposta = await api.get("/consultas/listar",  {
+            headers: {
+              "Content-Type": "application/json",
+              'Authorization': "Bearer " + token
+            }
+          });
         const dadosDaApi = resposta.data;
         this.setState({ Consultas: dadosDaApi });
     };

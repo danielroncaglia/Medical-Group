@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-//import logo from "../../assets/img/icon-login.png";
-//import { Link } from "react-router-dom";
+
 
 import "../../assets/css/flexbox.css";
 import "../../assets/css/reset.css";
 import "../../assets/css/style.css";
-
-//import Rodape from "../../components/Rodape/Rodape";
 
 class App extends Component {
   render() {

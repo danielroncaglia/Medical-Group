@@ -28,7 +28,7 @@ export default class Login extends Component {
         
         alert(this.state.email + " logado");
 
-        Axios.post('http://192.168.15.10:5000/api/login', {
+        Axios.post('http://192.168.6.3:5000/api/login', {
           email : this.state.email,
           senha: this.state.senha
        })

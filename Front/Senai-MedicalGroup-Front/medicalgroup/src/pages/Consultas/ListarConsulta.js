@@ -58,7 +58,7 @@ class ListarConsulta extends Component {
                         {this.state.listarConsultas.map((consultas) => {
                             return (
                                 <li key={consultas.id} class="conteudoPrincipal-dados-link">
-                                    <h2 class="conteudoPrincipal-dados-titulo titulo-azul" >{consultas.idPaciente}</h2>
+                                    <p className="conteudoPrincipal-dados-titulo titulo-azul" >{consultas.idPaciente}</p>
                                     <p className="titulo-tipo-evento">{consultas.idMedico}</p>
                                     <p className="titulo-tipo-evento">{consultas.dataHorario}</p>
                                     <p className="titulo-tipo-evento">{consultas.descricaoConsulta}</p>
