@@ -94,6 +94,12 @@ namespace MedicalGroup.Controllers
 
                 var listaconsultapaciente = ConsultaRepository.consultaporPaciente(pacienteProcurado.IdPaciente);
 
+                foreach (var item in listaconsultapaciente)
+                {
+                    item.IdPacienteNavigation.Consultas = null;
+                    item.SituacaoConsulta = item.SituacaoConsulta.Trim();
+                }
+
                 return Ok(listaconsultapaciente);
 
             }
